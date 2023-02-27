@@ -7,7 +7,7 @@ public class Laptop {
 
     @Override
     public String toString() {
-        return "Процессор: "+ cpu + ", Операционная система: " + operationSystem + ", Объём ОЗУ: " + dram
+        return "Процессор: " + cpu + ", Операционная система: " + operationSystem + ", Объём ОЗУ: " + dram
                 + ", Объём памяти: " + memory + ", Цвет: " + color;
     }
 
@@ -54,10 +54,10 @@ public class Laptop {
     @Override
     public boolean equals(Object obj) {
         Laptop lep = (Laptop) obj;
-        if ((cpu.equals(lep.cpu) || lep.cpu == null)&&(color.equals(lep.color)|| lep.color == null)&&
-            (operationSystem.equals(lep.operationSystem) || lep.operationSystem == null)&&
-            (memory.equals(lep.memory)|| lep.memory == null)&&
-            (dram.equals(lep.dram)|| lep.dram == null)){
+        if ((cpu.equals(lep.cpu) || lep.cpu == null) && (color.equals(lep.color) || lep.color == null) &&
+                (operationSystem.equals(lep.operationSystem) || lep.operationSystem == null) &&
+                (memory.equals(lep.memory) || lep.memory == null) &&
+                (dram.equals(lep.dram) || lep.dram == null)) {
             return true;
         } else {
             return false;

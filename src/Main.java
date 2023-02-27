@@ -150,11 +150,13 @@ public class Main {
                             System.out.println(laptopSearch);
                             continue;
                         case 4:
-                            if (laptopSelection.size() == 0){
-                                for (int i = 0; i < laptopList.size(); i++) {
-                                    System.out.println(laptopSearch.equals(laptopList.get(i)));
+                            laptopSelection.clear();
+                            for (int i = 0; i < laptopList.size(); i++) {
+                                if (laptopList.get(i).equals(laptopSearch)) {
+                                    laptopSelection.add(laptopList.get(i));
                                 }
-                            }else laptopSelection.clear();
+                            }
+                            System.out.println(laptopSelection);
                             continue;
                         case 0:
                             System.out.println("Пока пока");
