@@ -53,14 +53,11 @@ public class Laptop {
 
     @Override
     public boolean equals(Object obj) {
-//        if (this == obj){
-//            return true;
-//        }
-//        if (!(obj instanceof Laptop)){
-//            return false;
-//        }
-        Laptop laptopEq = (Laptop) obj;
-        if (cpu.equals(laptopEq.cpu)){
+        Laptop lep = (Laptop) obj;
+        if ((cpu.equals(lep.cpu) || lep.cpu == null)&&(color.equals(lep.color)|| lep.color == null)&&
+            (operationSystem.equals(lep.operationSystem) || lep.operationSystem == null)&&
+            (memory.equals(lep.memory)|| lep.memory == null)&&
+            (dram.equals(lep.dram)|| lep.dram == null)){
             return true;
         } else {
             return false;

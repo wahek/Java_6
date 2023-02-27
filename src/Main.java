@@ -152,7 +152,7 @@ public class Main {
                         case 4:
                             if (laptopSelection.size() == 0){
                                 for (int i = 0; i < laptopList.size(); i++) {
-                                    System.out.println(laptopSelection.equals(laptopList.get(i)));
+                                    System.out.println(laptopSearch.equals(laptopList.get(i)));
                                 }
                             }else laptopSelection.clear();
                             continue;
@@ -171,7 +171,7 @@ public class Main {
     }
 
     public static ArrayList createLaptopList() {
-        int countLaptop = 20;
+        int countLaptop = 100;
         ArrayList<Object> arrayList = new ArrayList<>();
         for (int i = 0; i < countLaptop; i++) {
             Laptop laptop = new Laptop();
